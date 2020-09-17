@@ -1,24 +1,16 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## このリポジトリの概要・目的
 
-Things you may want to cover:
+- Youtubeで**うるぞー**氏が投稿している、『Ruby on Railsでコミュニティサービスを作る』シリーズをなぞって行きます。
 
-* Ruby version
+- なぞる過程で、Djangoアプリを作成する上で使わなかった **Docker** **Heroku** の技術を使い<br>
+前回のDjangoアプリでPythonanywhereに丸投げしたデプロイ技術を身に付けます。
 
-* System dependencies
 
-* Configuration
+- 要するに何がしたい？
+    - 学習内容の整理、プッシュする毎に動画のどこまで進めたかの備忘録
+    - どこまで吸収し、できるかの説明用ポートフォリオとしての活用
+    - 最終的にはHerokuにコネクトするところまでテストしたい
 
-* Database creation
 
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
