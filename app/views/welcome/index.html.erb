@@ -2,7 +2,7 @@
 
     <div class="content-block">
 
-    <% (1..10).each do |i| %>
+    <% @posts.each do |post| %>
 
 
         <div class="content">
@@ -33,8 +33,7 @@
             </div>
 
             <div class="text">
-                <p>これはサンプルテキストです</p>
-                <p>これはサンプルテキストです</p>
+                <p> <%= post.content %> </p>
             </div>
 
             <div class="action-menu">
