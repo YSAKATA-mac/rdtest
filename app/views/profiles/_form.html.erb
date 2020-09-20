@@ -20,6 +20,13 @@
             <%= f.label :image, "プロフィール画像" %>
             <%= f.file_field :image %><br>
         </div>
+
+        <% if f.object.image.attached? %>
+            <div class="image-preview">
+                <span>現在アップロードされてる画像：</span>
+                <%= image_tag f.object.image %>
+            </div>
+        <% end %>
         
         <div class="submit-block">
         <%= f.submit class:"button" %>

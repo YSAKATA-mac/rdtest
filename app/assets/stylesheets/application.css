@@ -14,20 +14,25 @@
  *= require_self
  */
 
- body{
+body{
     max-width: 1080px;
     margin: 0 auto;
  }
 
- img{
+img{
      max-width: 100%;
  }
 
 
- #header {
+#header {
     display: flex;
     align-items: center;
     justify-content: space-between;
+}
+
+#header .logo img{
+    width: 300px;
+    height: auto;
 }
 
 #header #nav {

@@ -9,23 +9,27 @@
             <div class="user-about">
 
                 <div class="image">
-                    <%= image_tag  "ninja.jpg"%>
+                    <% if post.user.image.attached? %>
+                        <%= image_tag  post.user.image %>
+                    <% else %>
+                        <%= image_tag "nouser.png" %>
+                    <% end %>
                 </div>
 
                 <div class="profile">
 
                     <div class="name-history">
                         <div class="name">
-                            ゆーじ
+                        <%= post.user.name %>
                         </div>
 
                         <div class="learning-history">
-                            学習歴：１年未満
+                        <%= "学習歴： #{post.user.learning_history}年" %>
                         </div>
                     </div>
 
                     <div class="purpose">
-                        目的：Ruby on Rails, docker, heroku技術の習得
+                        <%= "勉強の目的：　#{post.user.purpose}" %>
                     </div>
 
                 </div>
